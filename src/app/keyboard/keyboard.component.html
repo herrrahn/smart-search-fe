@@ -1,0 +1,45 @@
+<div class="suggestions">
+  history: {{searchHistory.join(', ')}}
+</div>
+<div class="suggestions">
+  suggestions: {{suggestions}}
+</div>
+
+<span class="KeyboardKey" (click)="startSearch()">Start</span>
+<span class="KeyboardKey" (click)="debug()">Debug</span>
+<span class="KeyboardKey" (click)="reset()">Reset</span>
+
+<div class="keyboard">
+  <div class="KeyboardRow">
+    <span class="KeyboardKey" (click)="search('Q')">Q</span>
+    <span class="KeyboardKey" (click)="search('W')">W</span>
+    <span class="KeyboardKey" (click)="search('E')">E</span>
+    <span class="KeyboardKey" (click)="search('R')">R</span>
+    <span class="KeyboardKey" (click)="search('T')">T</span>
+    <span class="KeyboardKey" (click)="search('Y')">Y</span>
+    <span class="KeyboardKey" (click)="search('U')">U</span>
+    <span class="KeyboardKey" (click)="search('I')">I</span>
+    <span class="KeyboardKey" (click)="search('O')">O</span>
+    <span class="KeyboardKey" (click)="search('P')">P</span>
+  </div>
+  <div class="KeyboardRow">
+    <span class="KeyboardKey" (click)="search('A')">A</span>
+    <span class="KeyboardKey" (click)="search('S')">S</span>
+    <span class="KeyboardKey" (click)="search('D')">D</span>
+    <span class="KeyboardKey" (click)="search('F')">F</span>
+    <span class="KeyboardKey" (click)="search('G')">G</span>
+    <span class="KeyboardKey" (click)="search('H')">H</span>
+    <span class="KeyboardKey" (click)="search('J')">J</span>
+    <span class="KeyboardKey" (click)="search('K')">K</span>
+    <span class="KeyboardKey" (click)="search('L')">L</span>
+  </div>
+  <div class="KeyboardRow">
+    <span class="KeyboardKey" (click)="search('Z')">Z</span>
+    <span class="KeyboardKey" (click)="search('X')">X</span>
+    <span class="KeyboardKey" (click)="search('C')">C</span>
+    <span class="KeyboardKey" (click)="search('V')">V</span>
+    <span class="KeyboardKey" (click)="search('B')">B</span>
+    <span class="KeyboardKey" (click)="search('N')">N</span>
+    <span class="KeyboardKey" (click)="search('M')">M</span>
+  </div>
+</div>

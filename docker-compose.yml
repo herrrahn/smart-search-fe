@@ -1,0 +1,13 @@
+version: "3.0"
+services: 
+  be:
+    image: ias_be:latest
+    ports:
+      - 8080:8080
+  
+  fe:
+    image: ias_fe:latest
+    ports:
+      - 33302:33302
+    depends_on:
+      - be
